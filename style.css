@@ -1,0 +1,545 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+.clear {
+  clear: both;
+}
+i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+/* bắt đầu CSS headẻr */
+#header {
+  height: 46px;
+  background-color: #000;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+#header .search-btn {
+  float: right;
+  line-height: 46px;
+  color: #fff;
+  padding: 0 21px;
+  cursor: pointer;
+}
+#header .search-btn:hover {
+  background-color: red;
+}
+#nav {
+  display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+#nav .subnav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0, 0, 10, rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+}
+#nav .subnav a {
+  color: #000;
+  padding: 0 10px;
+  line-height: 38px;
+}
+
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+#nav > li > a:hover,
+#nav .subnav li:hover {
+  color: #000;
+  background-color: #ccc;
+}
+/* kết thúc CSS header */
+
+/* bắt đầu CSS slider */
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url(https://www.w3schools.com/w3images/ny.jpg) top center/ cover
+    no-repeat;
+}
+#slider .text {
+  position: absolute;
+  color: #fff;
+  bottom: 48px;
+  width: 100%;
+  text-align: center;
+}
+#slider .text-heading {
+  font-size: 24px;
+}
+#slider .text-body {
+  font-size: 15px;
+  margin-top: 25px;
+}
+/* kêts thúc CSS slider */
+
+/* bắt đâù CSS COntent */
+
+/* CSS giới thiệu band nhạc và thành viên nhóm */
+#content .content-section {
+  max-width: 900px;
+  padding: 60px 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#content .section-heading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+#content .subsection-heading {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 25px;
+  font-style: italic;
+  opacity: 0.6;
+}
+#content .text-content {
+  margin-top: 15px;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.5;
+}
+#content .list-member {
+  margin-top: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: inherit;
+  text-align: center;
+  max-width: 780px;
+  overflow: hidden;
+}
+#content .member {
+  float: left;
+  width: 33.333333%;
+}
+#content .name-member {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+#content .img-member {
+  border-radius: 4px;
+  width: 60%;
+  margin-bottom: 16px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* CSS kết thúc band nhạc và thành viên nhóm */
+
+/* bắt đàu CSS tour */
+#content .tour {
+  background-color: #000;
+  margin-top: 68px;
+  overflow: hidden;
+}
+#content > .tour .content-section > .section-heading {
+  color: #fff;
+}
+#content > .tour .content-section > .subsection-heading {
+  color: #fff;
+  margin-bottom: 40px;
+}
+#content .data-tour {
+  background-color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  list-style: none;
+}
+#content .tour1 {
+  padding: 10px 16px;
+  border-bottom: 1px solid #ccc;
+  opacity: 0.6;
+}
+#content .sold-out {
+  background-color: red;
+  padding: 3px 4px;
+  margin-left: 16px;
+}
+#content .quan {
+  float: right;
+  width: 23px;
+  height: 23px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 50%;
+}
+#content .list {
+  margin-top: 32px;
+  margin-left: -8px;
+  margin-right: -8px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+#content .buyticket {
+  float: left;
+  width: 33.333333%;
+  padding: 0 8px;
+  margin-bottom: 60px;
+}
+.addlive {
+  width: 100%;
+  display: block;
+}
+.addlive:hover {
+  opacity: 0.6;
+}
+.inf {
+  background-color: #fff;
+  padding: 16px;
+}
+.add {
+  font-weight: bolder;
+}
+.date {
+  margin-top: 15px;
+  opacity: 0.6;
+}
+.comment {
+  margin: 15px 0;
+}
+.btn {
+  padding: 8px 10px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #009688;
+  color: #000;
+  cursor: pointer;
+}
+/* bắt đàu CSS tour */
+
+/* CSS hàng ,cột (cần nhớ) */
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  width: 50%;
+}
+/* ----CSS hàng ,cột (cần nhớ)-- */
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+/* Bắt đầu CSS contact */
+
+.contact-content {
+  margin-top: 48px;
+}
+
+.info-contact {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-font {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.form-control {
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 6px;
+}
+.form-submit-btn {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  padding: 10px 16px;
+  float: right;
+}
+
+/* kết thức CSS contact */
+
+.map img {
+  width: 100%;
+}
+
+.ic:hover {
+  opacity: 0.6;
+}
+/* Bắt đầu CSS bảng hiện lên */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal-container {
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100%-32px);
+  min-height: 200px;
+  position: relative;
+  animation: modalFadeIn ease;
+}
+.modal-close {
+  position: absolute;
+  color: #fff;
+  padding: 12px;
+  right: 0;
+  top: 0;
+  opacity: 0.8;
+}
+.modal-close:hover {
+  opacity: 1;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-header {
+  background-color: #009688;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+}
+
+.icon-heading {
+  margin-right: 15px;
+}
+.modal-lable {
+  display: block;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.modal-body {
+  padding-left: 20px;
+}
+.buy-tickets {
+  display: block;
+}
+.modal-input {
+  border: 1px solid #ccc;
+  width: 98%;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.modal #buy-tickets {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: none;
+  width: 98%;
+  padding: 18px;
+  background-color: #009688;
+  text-transform: uppercase;
+  color: #fff;
+}
+#buy-tickets:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.modal-footer {
+  padding: 16px;
+  text-align: right;
+  font-size: 15px;
+}
+.modal-footer a {
+  color: #2196f3;
+}
+/* kết thúc CSS bảng hiện lên */
+
+.mt-64 {
+  margin-top: 64px;
+}
+.mb-64 {
+  margin-bottom: 64px;
+}
+.cf {
+  text-align: center;
+}
+.color-footer {
+  color: #000;
+}
+.body-footer {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+/* giúp ẩn hiện bảng thông báo khi click */
+.modal.open {
+  display: flex;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* css nav cho mobile */
+
+.overlay {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadein linear 0.2s;
+}
+
+#nav_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  max-width: 100%;
+  background-color: #fff;
+  padding-top: 46px;
+  padding-left: 28px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+
+#nav_mobile li {
+  list-style: none;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#nav_mobile li a {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.close_mobile {
+  position: absolute;
+  line-height: 46px;
+  padding-left: 20px;
+  color: #000;
+  width: 46px;
+  height: 46px;
+  top: 0;
+  right: 0;
+  padding-right: 5px;
+}
+
+.nav_btn {
+  display: block;
+  width: 60px;
+  height: 46px;
+}
+
+.btn_nav {
+  display: none;
+  line-height: 46px;
+  padding-left: 20px;
+  color: #fff;
+  width: 46px;
+  height: 46px;
+}
+.nav_input:checked ~ .overlay {
+  display: block;
+}
+.nav_input:checked ~ #nav_mobile {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 739px) {
+  #nav {
+    display: none;
+  }
+
+  .btn_nav {
+    display: block;
+  }
+}
